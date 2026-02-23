@@ -57,6 +57,7 @@ public class BaseTests extends BaseWebT {
 
         WebElement verifyProducts = driver.findElement(By.xpath("//h3[text()='Epic sadface: Sorry, this user has been locked out.']"));
         assertThat(verifyProducts.getText()).isEqualTo("Epic sadface: Sorry, this user has been locked out.");
+        System.out.println("El error es: "+verifyProducts.getText());
 
         try {
             Thread.sleep(2000);

@@ -25,6 +25,7 @@ public class YourKart {
 
         WebElement verifyProducts = driver.findElement(By.xpath("//div[@class='cart_item'][1]//a"));
         assertThat(verifyProducts.getText()).isEqualTo("Sauce Labs Backpack");
+        System.out.println("El item seleccionado es: "+verifyProducts.getText());
     }
 
 }
